@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> these nuts</title>
+    <meta charset="UTF-8"/>
+</head>
+    <body>
+    <script>
+        function favoriteAnimal(animal) {
+  console.log(animal + " is my favorite animal!")
+}
+
+favoriteAnimal('Goat')
+
+    function add7(a){
+        console.log(a+7)
+    }
+    add7(4);
+
+    function multiply(a,b){
+        result = a*b;
+        console.log(result);
+    }
+    multiply(3,4)
+
+    function capitalize(input){
+        return input.charAt(0).toUpperCase() + input.slice(1);
+    }
+    
+    console.log(capitalize('guys'));
+    
+//     function capitalizeFirstLetter(string) {
+//   return string.charAt(0).toUpperCase() + string.slice(1);
+// }
+
+// console.log(capitalizeFirstLetter('het')); // Foo
+
+    // function lastLetter(input){
+    //     var = "these nuts";
+
+    //     index = input.length - 1;
+    //     return input - input.charAt(index) + input.charAt(index).toUpperCase() ;
+        
+    // }
+    //     console.log(lastLetter('heyy'));
+
+
+        // function capitalizeLast(input){
+        //     return input.charAt(input.length) + string.slice(-1);
+
+        // }
+
+        // console.log(capitalizeLast('hiii'));
+
+// //capitalize only the first letter of the string. 
+// function capitalizeFirstLetter(string) {
+//     return string.charAt(0).toUpperCase() + string.slice(1);
+// }
+// //capitalize all words of a string. 
+// function capitalizeWords(string) {
+//     return string.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+// };
+
+// const string4 = "tHIS STRING'S CAPITALISATION WILL BE FIXED."
+// const string4 = string[0].toUpperCase() + string.slice(1)
+
+
+
+// function last(inputString){
+
+//     newString = inputString - (inputString.charAt(inputString.length - 1))
+//     + inputString.charAt(inputString.length - 1).toUpperCase()
+
+//     return newString;
+//     console.log(last(inputString));
+// }
+
+// console.log(last("hi"));
+
+
+const upperLower = function(string){
+  let newString ="", newChar ="";
+  for (let i=string.length; i > 0; i--) {
+    if (string.charAt(i) === " ") {
+      newChar = " "
+    } else if (string.charAt(i) === string.charAt(i).toUpperCase()) {
+      newChar = string.charAt(i).toLowerCase()
+    } else {
+      newChar = string.charAt(i).toUpperCase()
+    }
+   newString += newChar;
+  }
+
+  return newString;
+}
+
+console.log(upperLower("hELLO"));
+
+
+let myWord = prompt('Enter a word. The last letter will be returned.');
+
+    lastLetter(myWord);
+
+    function lastLetter(myWord) {
+      let letter = myWord.slice(-1);
+      console.log(letter);
+      return letter;
+    }
+
+
+    
+
+
+
+
+
+    </script>
+    </body>
+
+</html>
